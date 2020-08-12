@@ -35,22 +35,6 @@ class NewCustomerVC: UIViewController {
     
     }
 }
-    extension NewCustomerVC: UITextFieldDelegate {
-        func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-            switch textField {
-            case firstNameTextField:
-                lastNameTextField.becomeFirstResponder()
-            case lastNameTextField:
-                phoneTextField.becomeFirstResponder()
-            case phoneTextField:
-                emailTextField.becomeFirstResponder()
-            default:
-                emailTextField.resignFirstResponder()
-                
-            }
-            return true
-        }
-    }
    
 
 
